@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Yellowtail&display=swap'); 
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Kalam', cursive;
+    --fonte3: 'Yellowtail', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+     background-color: rgb(255, 183, 0);
+     color: white;
+     text-align: center;
+     text-shadow: 2px 2px 2px black;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 9vw;
+}
+
+header > h2 {
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw;
+}
+
+header > p {
+    padding-bottom: 30px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+#ad1 {
+    font-family: var(--fonte1);
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(28, 28, 28, 0.824);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(30, 30, 30, 0.39);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+}
+
+section#img03 {
+    background-image: url(imagens/background003.jpg);
+    background-size: cover;
+}
